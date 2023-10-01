@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+}
+.menu{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 14%;
+    height: 100%;
+    /* background-color: red; */
+}
+.menuNormal{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    /* background-color: aqua; */
+}
+.menuNormal .menu1{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-right: 30%;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.menuNormal .menu1 li a{
+    font-size: 17px;
+    color: #000;
+}
+.menuNormal .menu2{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin-right: 1%;
+    justify-content: space-between;
+    /* background-color: bisque; */
+}
+.menuNormal .menu2 li a{
+    font-size: 17px;
+    color: #000;
+}
+.menuNormal img{
+    max-width: 5%;
+    width: 4%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+.iconUsuario{
+    width: 6%;
+    text-align: center;
+    /* background-color: azure; */
+}
+.iconUsuario a i{
+    font-size: 30px;
+}
+#iconMenu{
+    display: none;
+}
+
+.menuHamburguer{
+    display: none;
+}
+
+
+
+/* SLIDE */
+#slide{
+    width: 99vw;
+    height: 100vh;
+    padding-top: 50px;
+    overflow: hidden;
+}
+.slides{
+    width: 5800px;
+    display: flex;
+}
+#actual{
+    transition: 3s ease-out;
+}
+#slide img{
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+}
+
+#slide .image .conteudo{
+    position: absolute;
+    width: 40%;
+    top: 4rem;
+    left: 10%;
+    color: #fff;
+    z-index: 1;
+}
+#slide .image .conteudo h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#slide .image .conteudo h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#slide .image .conteudo p{
+    font-size: 18px;
+}
+#slide .image .conteudo p:not(:last-of-type){
+    margin-bottom: 8px;
+}
+#slide .btnSlide{
+    padding: 10px;
+    margin-top: 20px;
+    background: #76b900;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+#slide .btnSlide:hover{
+    background: #bcfd4b;
+    transition: .4s ease-out;
+}
+
+.balls{
+    position: absolute;
+    width: 100vw;
+    top: 88vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    gap: 3%;
+}
+.balls div{
+    width: 13%;
+    border: 1px solid #fff;
+    padding: 10px 2rem;
+    cursor: pointer;
+    transition: all .6s ease-out;
+}
+.balls div:hover{
+    background: #fff;
+}
+.ballsActual{
+    background: #fff;
+}
+
+
+
+/* CARD */
+#card{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding-left: 5%;
+    padding-bottom: 4%;
+    background: #1a1a1a;
+}
+#card .cardPrincipal{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/3) - 35px);
+    gap: 35px;
+
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+}
+#card .cardPrincipal .card1{
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+    background: #fff;
+
+
+    scroll-snap-align: start;
+}
+#card .cardImagem img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+#card h1{
+    color: #fff;
+    padding: 60px 0 40px 0;
+}
+#card h1 i{
+    color: #c6c6c6;
+}
+#card .card1 span{
+    font-weight: bold;
+}
+#card .card1 h3{
+    font-weight: bold;
+    padding-top: 8px;
+    position: relative;
+}
+#card .card1 h3::after{
+    position: absolute;
+    content: '';
+    border-bottom: 2.8px solid #76b900;
+    width: 125px;
+    left: 0;
+    top: 30px;
+}
+
+#card .slide{
+    position: relative;
+}
+#card i{
+    position: absolute;
+    padding: 3px 15px;
+    color: #000;
+    background: #76b900;
+    cursor: pointer;
+}
+ #btnLeft{
+    top: -66px;
+    left: 87%;
+}
+#btnRight{
+    top: -66px;
+    right: 3%;
+}
+
+.slides.no-transition{
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* CARD 2 */
+#cards2{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding-left: 50px;
+    padding-top: 6rem;
+    background: #fff;
+}
+.slide2{
+    display: block;
+    position: relative;
+}
+.slide2 h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.slide2 i{
+    position: absolute;
+    margin-top: 65px;
+    padding: 15px 15px;
+    color: #000;
+    background: #76b900;
+    cursor: pointer;
+}
+.slides2{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/2) - 80px);
+    margin-top: 50px;
+    gap: 40px;
+
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+}
+.card2{
+    height: 34rem;
+    display: block;
+    box-shadow: 1px 1px 4px -1px;
+    margin-bottom: 6rem;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+
+    scroll-snap-align: start;
+}
+.card2 .image img{
+    height: 17rem;
+    width: 100%;
+    object-fit: cover;
+}
+.card2 .card2p{
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0 10px;
+}
+.card2 h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+.card2 h2{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.card2 p{
+    font-size: 1.3rem;
+    margin-top: 1.6rem;
+    margin-left: 2rem;
+}
+
+
+
+
+
+/* FOOTER */
+footer{
+    width: 99vw;
+    background: #000;
+}
+.footerPrincipal{
+    width: 95vw;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+.footerPrincipal .footerInfo{
+    width: 95vw;
+    height: 70%;
+    display: flex;
+    padding-top: 5%;
+    gap: 3%;
+    /* background-color: blue; */
+}
+footer .info{
+    width: 31%;
+}
+footer .info h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+footer .info h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    border-bottom: 1px solid;
+}
+footer .info ul li{
+    padding: 7px 0;
+    font-size: 20px;
+    color: #76b900;
+}
+
+footer .footerMidia{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+.footerMidia i{
+    margin-right: 3%;
+    font-size: 50px;
+    color: #c6c6c6;
+}

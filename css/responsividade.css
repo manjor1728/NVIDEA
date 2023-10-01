@@ -1,0 +1,287 @@
+@media (max-width: 768px){
+    nav{
+        justify-content: space-between;
+    }
+    #iconMenu{
+        display: block;
+    }
+    #iconMenu a i{
+        font-size: 40px;
+        color: #000;
+    }
+    .menuNormal{
+        display: none;
+    }
+    nav .logo{
+        width: 16%;
+    }
+    nav .iconUsuario{
+        width: 5%;
+    }
+    .iconUsuario a i{
+        color: #0000009c;
+    }
+
+    header .menuHamburguer{
+        width: 100%;
+        display: flex;
+        padding: 0 0 15px;
+        box-shadow: 0px 9px 9px -15px;
+    }
+    header .menuHamburguer ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: #fff;
+        transition: all 3s ease-out;
+        padding-bottom: 25px;
+    }
+    header .menuHamburguer ul li{
+        padding: 15px;
+        cursor: pointer;
+    }
+    header .menuHamburguer ul li:hover{
+        background: #0000002a;
+    }
+    header .menuHamburguer ul li a{
+        font-size: 17px;
+        color: #000;
+    }
+    header .open{
+        display: none;
+    }
+
+
+
+    
+    #btnLeft{
+        top: -66px;
+        left: 80%;
+    }
+    #btnRight{
+        top: -66px;
+        right: 5%;
+    }
+
+
+    .footerPrincipal .footerInfo{
+        width: 95vw;
+        height: 74%;
+        display: flex;
+        gap: 3%;
+        /* background-color: blue; */
+    }
+    footer .info h1::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 85px;
+        left: 0;
+        border-bottom: 1px solid;
+    }
+    footer .info .pri{
+        margin-top: 66px;
+    }
+
+    .footerMidia i{
+        margin-right: 4%;
+        font-size: 40px;
+    }
+
+
+
+    .slides2{
+        grid-auto-columns: calc((100%) - 210px);
+    }
+    #cards2{
+        padding-left: 30px;
+        padding-top: 6rem;
+    }
+}
+
+
+
+
+@media (max-width: 425px){
+    
+    #iconMenu{
+        display: block;
+    }
+    nav .logo{
+        width: 30%;
+    }
+    nav .iconUsuario{
+        width: 10%;
+    }
+    #slide{
+        height: 100vh;
+    }
+    #slide img{
+        height: 100vh;
+    }
+    #slide .image .conteudo{
+        position: absolute;
+        width: 90%;
+        top: 4rem;
+        left: 5%;
+        right: 5%;
+    }
+
+
+    .balls{
+        position: absolute;
+        width: 100vw;
+        top: 90vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1%;
+        gap: 2%;
+        /* border: 1px solid red; */
+    }
+    .balls div{
+        width: 20%;
+        border: 1px solid #fff;
+        padding: 10px 1.5rem;
+        cursor: pointer;
+        transition: all .6s ease-out;
+    }
+
+
+
+    #card h1 i{
+        display: none;
+    }
+
+    #btnLeft{
+        top: -66px;
+        left: 70%;
+    }
+    #btnRight{
+        top: -66px;
+        right: 7%;
+    }
+
+
+    
+    #card .cardPrincipal{
+        grid-auto-columns: calc((100%) - 25px);
+    }
+
+
+
+    .slides2{
+        grid-auto-columns: calc((100%) - 70px);
+        gap: 26px;
+    }
+    #cards2{
+        padding: 0 15px;
+        padding-top: 3rem;
+    }
+    .card2 .card2p{
+        font-size: 1.3rem;
+        line-height: 2.6rem;
+        text-align: justify;
+    }
+
+
+
+    footer{
+    }
+    .footerPrincipal .footerInfo{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .info{
+        width: 100%;
+        padding: 0 20px;
+    }
+    footer .info ul{
+        width: 100%;
+        display: block;
+    }
+    footer .info ul li{
+        padding: 5px 0;
+        font-size: 16px;
+        color: #76b900;
+    }
+    footer .info h1{
+        font-size: 22px;
+        margin-bottom: 10px;
+        position: relative;
+        padding-top: 30px;
+        text-align: center;
+    }
+    footer .info h1::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        border-bottom: 1px solid;
+    }
+    footer .info .pri{
+        margin-top: 0px;
+    }
+    footer .footerMidia{
+        padding: 6rem 0 2.5rem;
+    }
+    .footerMidia i{
+        font-size: 35px;
+        margin-right: 5%;
+    }
+}
+
+
+
+
+
+@media (max-width: 375px){
+    #card h1{
+        font-size: 1.5rem;
+    }
+    #card i{
+        padding: 3px 12px;
+    }
+    #btnLeft{
+        top: -66px;
+        left: 74%;
+    }
+    #btnRight{
+        top: -66px;
+        right: 5%;
+    }
+
+
+
+    .slide2 h2{
+        font-size: 1.5rem;
+    }
+    .slide2 i{
+        padding: 12px 15px;
+    }
+    .slide2 #btnRight{
+        right: 0%;
+    }
+}
+
+
+
+
+@media ( max-width: 320px){
+    #card h1{
+        font-size: 1.3rem;
+    }
+    #card i{
+        padding: 3px 10px;
+    }
+
+
+
+    .slide2 h2{
+        font-size: 1.3rem;
+    }
+    .slide2 i{
+        padding: 8px 13px;
+    }
+}
