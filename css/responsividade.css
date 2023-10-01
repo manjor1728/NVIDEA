@@ -183,6 +183,15 @@
         line-height: 2.6rem;
         text-align: justify;
     }
+    .card2 h3{
+        font-size: 1.3rem;
+    }
+    .card2 h2{
+        font-size: 1.4rem;
+    }
+    .card2 p{
+        font-size: 1.1rem;
+    }
 
 
 
